@@ -20,6 +20,12 @@ def GetMetrics():
         dfs.append(response_data_df)
     return pd.concat(dfs).head
 
+# Get metrics for a given set of assests for a given date range
+def GetMetricsForAssets(*asset_ids, start_date, end_date):
+    metric = 'price'
+    timeseries_df = messari.get_asset_metrics_timeseries(asset_slugs=asset_ids, asset_metric=metric, start=start_date, end=end_date, to_dataframe=True)
+    return timeseries_df
 
 print(GetAssets())
 print(GetMetrics())
+print(GetMetricsForAssets(['btc', 'eth'], '2019-01-01', '2019-12-31'))
