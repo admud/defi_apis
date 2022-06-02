@@ -20,6 +20,25 @@ def GetMetrics():
         dfs.append(response_data_df)
     return pd.concat(dfs).head
 
+# Get metrics for a given set of assests for a given date range
+def GetMetricsForAssets(asset_ids, start_date, end_date):
+    metric = 'price'
+    timeseries_df = messari.get_metric_timeseries(asset_slugs=asset_ids, asset_metric=metric, start=start_date, end=end_date, to_dataframe=True)
+    return timeseries_df
 
-print(GetAssets())
-print(GetMetrics())
+# Get all market_data_liquidity for a given exchange
+def GetMarketDataLiquidity():
+    metric = 'market_data_liquidity'
+    market_data_liquidity_df = messari.get_all_assets(asset_metric = metric, to_dataframe=True)
+    return market_data_liquidity_df
+
+# Get the list of all exchanges and pairs
+def GetExchanges():
+    exchanges_df = messari.get_all_markets(to_dataframe=True)
+    return exchanges_df
+
+# print(GetAssets())
+# print(GetMetrics())
+#print(GetMetricsForAssets(['btc', 'eth'], '2019-01-01', '2019-12-31'))
+#print(GetExchanges())
+print(GetMarketDataLiquidity())
