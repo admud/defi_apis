@@ -18,4 +18,6 @@ $79/ month provides 14 endpoints
 7. normics
 
 8. Crypto API - Customers can begin with a free membership that gives them access to testnets and allows them to explore the features of Crypto APIs.
-The bespoke plan is ideal for individuals who have specific requirements and handle any inquiries. €99 is the cheapest paid bundle. 
+The bespoke plan is ideal for individuals who have specific requirements and handle any inquiries. €99 is the cheapest paid bundle.
+
+test - June 12th
