@@ -37,8 +37,8 @@ def GetExchanges():
     exchanges_df = messari.get_all_markets(to_dataframe=True)
     return exchanges_df
 
-# print(GetAssets())
-# print(GetMetrics())
+#print(GetAssets())
+#print(GetMetrics())
 #print(GetMetricsForAssets(['btc', 'eth'], '2019-01-01', '2019-12-31'))
 #print(GetExchanges())
 print(GetMarketDataLiquidity())

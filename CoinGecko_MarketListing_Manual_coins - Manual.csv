@@ -1,0 +1,15 @@
+symbol,name,API-id
+SEX,Solidex,solidex
+astETH,Wrapped stETH,aave-interest-bearing-steth
+CFG,Centrifuge,centrifuge
+wCFG,Centrifuge,wrapped-centrifuge
+EXFI,EXFI,flare-finance
+ALK,ALK,alkemi-network-dao-token
+AUST,AnchorUST,anchorust
+WSTETH,WSTETH,wrapped-steth
+RETH,Rocket Pool ETH,rocket-pool-eth
+aWETH,WETH,aave-weth
+WAVAX,Wrapped AVAX,wrapped-avax
+BSGG,BSGG,betswap-gg
+3CRV,3CRV,lp-3pool-curve
+UST,TerraUSD,terrausd-wormhole

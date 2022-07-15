@@ -21,6 +21,7 @@ def get_market_listing() -> table:
         # Display the choices to the user
         for item in table.field_names:
             print(str(number) + ": " + item)
+
             number +=1
         choice = int(input("Choose the number you want to sort: "))
 
